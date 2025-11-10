@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PhotoSet Pro</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b0b0b"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+  <div id="app" class="app">
+    <header class="topbar">
+      <div class="title">PhotoSet Pro</div>
+      <div class="controls">
+        <button id="langBtn" class="btn small">ES / EN</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="grid" id="sceneGrid">
+        <!-- scene buttons injected by JS -->
+      </section>
+
+      <section id="card" class="card hidden">
+        <div class="card-head">
+          <h2 id="cardTitle">Retrato humano</h2>
+          <button id="favBtn" class="btn">Guardar</button>
+          <button id="closeBtn" class="btn light">Cerrar</button>
+        </div>
+        <div class="card-body" id="cardBody">
+          <!-- preset details go here -->
+        </div>
+        <div class="card-foot">
+          <button id="copyBtn" class="btn primary">Copiar configuración</button>
+          <button id="exportBtn" class="btn">Exportar PDF</button>
+        </div>
+      </section>
+
+      <section id="tutorial" class="tutorial hidden">
+        <h3>Tutorial rápido</h3>
+        <ol>
+          <li>Toca una escena para ver la configuración.</li>
+          <li>Toca "Guardar" para ponerla en Favoritos.</li>
+          <li>Toca el ícono de compartir en Safari y elige "Agregar a pantalla de inicio".</li>
+        </ol>
+        <button id="tutorialOk" class="btn primary">Entendido</button>
+      </section>
+
+    </main>
+
+    <footer class="footer">Megan — Configuraciones profesionales para Sony a6400</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
